@@ -5,7 +5,7 @@ import Login from './Components/Login';
 import Home from './Components/Home';
 
 const routing = (
-  <Router>
+  <Router basename="/">
     <Route path="/login" component={Login} />
     <Route path="/home" component={Home} />
     <Redirect exact from="/" to="login" />
